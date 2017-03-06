@@ -1,122 +1,132 @@
 {
-  "machineProfiles": {
-    "*gen_grbl": {
-      "machineLabel": "Generic GRBL machine",
-      "machineDescription": "Use this if you have a GRBL machine",
-      "settings": {
-        "machineWidth": 300,
-        "machineHeight": 300,
-        "machineBeamDiameter": 0.2,
-        "toolSafetyLockDisabled": false,
-        "toolCncMode": false,
-        "toolImagePosition": "BL",
-        "toolUseNumpad": false,
-        "toolUseVideo": false,
-        "toolWebcamUrl": "",
-        "gcodeStart": "G21         ; Set units to mm\r\nG90         ; Absolute positioning\r\n",
-        "gcodeEnd": "M2          ; End\r\n",
-        "gcodeHoming": "",
-        "gcodeLaserOn": "M3",
-        "gcodeLaserOff": "M5"
-      }
-    },
-    "*gen_smoothie": {
-      "machineLabel": "Generic SMOOTHIE machine",
-      "machineDescription": "Use this if you have a SMOOTHIE machine",
-      "settings": {
-        "machineWidth": 300,
-        "machineHeight": 300,
-        "machineBeamDiameter": 0.2,
-        "toolSafetyLockDisabled": false,
-        "toolCncMode": false,
-        "toolImagePosition": "BL",
-        "toolUseNumpad": false,
-        "toolUseVideo": false,
-        "toolWebcamUrl": "",
-        "gcodeStart": "G21         ; Set units to mm\r\nG90         ; Absolute positioning\r\n",
-        "gcodeEnd": "M2          ; End\r\n",
-        "gcodeHoming": "",
-        "gcodeLaserOn": "",
-        "gcodeLaserOff": ""
-      }
-    },
-    "Emblaser2": {
-      "machineLabel": "Emblaser 2",
-      "machineDescription": "Use this if you have anEmblaser 2 machine",
-      "settings": {
-        "__version": "0.4.0",
-        "__selectedProfile": "Emblaser2",
-        "machineWidth": 500,
-        "machineHeight": 300,
-        "machineBeamDiameter": 0.2,
-        "machineZEnabled": true,
-        "machineZMatThickness": 0,
-        "machineZToolOffset": 0,
-        "machineBlowerEnabled": true,
-        "machineBlowerGcodeOn": "M08     ;AA ON",
-        "machineBlowerGcodeOff": "M09     ;AA OFF",
-        "pxPerInch": 72,
-        "dpiRasterBmp": 300,
-        "toolSafetyLockDisabled": false,
-        "toolCncMode": false,
-        "toolImagePosition": "BL",
-        "toolUseNumpad": false,
-        "toolVideoDevice": null,
-        "toolVideoPerspective": {
-          "enabled": false,
-          "before": [
-            170.66666666666666,
-            384,
-            682.6666666666666,
-            384,
-            682.6666666666666,
-            96,
-            170.66666666666666,
-            96
-          ],
-          "after": [
-            170.66666666666666,
-            384,
-            682.6666666666666,
-            384,
-            682.6666666666666,
-            96,
-            170.66666666666666,
-            96
-          ]
-        },
-        "toolVideoLens": {"a": 1, "b": 1, "F": 1, "scale": 1},
-        "toolVideoFov": {"x": 1, "y": 1},
-        "toolVideoResolution": null,
-        "toolWebcamUrl": "",
-        "toolFeedUnits": "mm/min",
-        "toolTestSValue": 1,
-        "toolTestDuration": 0,
-        "gcodeStart": "G21         ; Set units to mm\r\nG90         ; Absolute positioning\r\n",
-        "gcodeEnd": "M2              ; End\nG0Z50        ; Move Z up\nG0X0Y300  ; Move XY to top right\n",
-        "gcodeHoming": "G0Z60\nG92Z50\nG28X0Y0",
-        "gcodeToolOn": "",
-        "gcodeToolOff": "",
-        "gcodeSMaxValue": 1,
-        "gcodeToolTestPower": 0,
-        "gcodeToolTestDuration": 0,
-        "comServerIP": "localhost:8000",
-        "comServerConnect": false,
-        "comInterfaces": ["USB", "ESP8266"],
-        "comPorts": [
-          "/dev/cu.Bluetooth-Incoming-Port",
-          "/dev/cu.usbmodem14111"
+  "*gen_grbl": {
+    "machineLabel": "Generic GRBL machine",
+    "machineDescription": "Use this if you have a GRBL machine",
+    "settings": {
+      "machineWidth": 300,
+      "machineHeight": 300,
+      "machineBeamDiameter": 0.2,
+      "toolSafetyLockDisabled": false,
+      "toolCncMode": false,
+      "toolImagePosition": "BL",
+      "toolUseNumpad": false,
+      "toolUseVideo": false,
+      "toolWebcamUrl": "",
+      "gcodeStart": "G21         ; Set units to mm\r\nG90         ; Absolute positioning\r\n",
+      "gcodeEnd": "M2          ; End\r\n",
+      "gcodeHoming": "",
+      "gcodeLaserOn": "M3",
+      "gcodeLaserOff": "M5"
+    }
+  },
+  "*gen_smoothie": {
+    "machineLabel": "Generic SMOOTHIE machine",
+    "machineDescription": "Use this if you have a SMOOTHIE machine",
+    "settings": {
+      "machineWidth": 300,
+      "machineHeight": 300,
+      "machineBeamDiameter": 0.2,
+      "toolSafetyLockDisabled": false,
+      "toolCncMode": false,
+      "toolImagePosition": "BL",
+      "toolUseNumpad": false,
+      "toolUseVideo": false,
+      "toolWebcamUrl": "",
+      "gcodeStart": "G21         ; Set units to mm\r\nG90         ; Absolute positioning\r\n",
+      "gcodeEnd": "M2          ; End\r\n",
+      "gcodeHoming": "",
+      "gcodeLaserOn": "",
+      "gcodeLaserOff": ""
+    }
+  },
+  "*emblaser2": {
+    "machineLabel": "Emblaser 2",
+    "machineDescription": "Use this if you have anEmblaser 2 machine",
+    "machineAbout": "emblaser2.md",
+    "settings": {
+      "__version": "0.4.0",
+      "__selectedProfile": "Emblaser2",
+      "machineWidth": 500,
+      "machineHeight": 300,
+      "machineBeamDiameter": 0.2,
+      "machineZEnabled": true,
+      "machineZMatThickness": 0,
+      "machineZToolOffset": 0,
+      "machineBlowerEnabled": true,
+      "machineBlowerGcodeOn": "M08     ;AA ON",
+      "machineBlowerGcodeOff": "M09     ;AA OFF",
+      "pxPerInch": 72,
+      "dpiRasterBmp": 300,
+      "toolSafetyLockDisabled": false,
+      "toolCncMode": false,
+      "toolImagePosition": "BL",
+      "toolUseNumpad": false,
+      "toolVideoDevice": null,
+      "toolVideoPerspective": {
+        "enabled": false,
+        "before": [
+          170.66666666666666,
+          384,
+          682.6666666666666,
+          384,
+          682.6666666666666,
+          96,
+          170.66666666666666,
+          96
         ],
-        "connectVia": "ESP8266",
-        "connectPort": "/dev/cu.usbmodem14111",
-        "connectBaud": "115200",
-        "connectIP": "192.168.15.15",
-        "jogStepsize": 1,
-        "jogFeedXY": 30,
-        "jogFeedZ": 5,
-        "jogAccumulatedJobTime": 579,
-        "dpiBitmap": 72
-      }
+        "after": [
+          170.66666666666666,
+          384,
+          682.6666666666666,
+          384,
+          682.6666666666666,
+          96,
+          170.66666666666666,
+          96
+        ]
+      },
+      "toolVideoLens": {
+        "a": 1,
+        "b": 1,
+        "F": 1,
+        "scale": 1
+      },
+      "toolVideoFov": {
+        "x": 1,
+        "y": 1
+      },
+      "toolVideoResolution": null,
+      "toolWebcamUrl": "",
+      "toolFeedUnits": "mm/min",
+      "toolTestSValue": 1,
+      "toolTestDuration": 0,
+      "gcodeStart": "G21         ; Set units to mm\r\nG90         ; Absolute positioning\r\n",
+      "gcodeEnd": "M2              ; End\nG0Z50        ; Move Z up\nG0X0Y300  ; Move XY to top right\n",
+      "gcodeHoming": "G0Z60\nG92Z50\nG28X0Y0",
+      "gcodeToolOn": "",
+      "gcodeToolOff": "",
+      "gcodeSMaxValue": 1,
+      "gcodeToolTestPower": 0,
+      "gcodeToolTestDuration": 0,
+      "comServerIP": "localhost:8000",
+      "comServerConnect": false,
+      "comInterfaces": [
+        "USB",
+        "ESP8266"
+      ],
+      "comPorts": [
+        "/dev/cu.Bluetooth-Incoming-Port",
+        "/dev/cu.usbmodem14111"
+      ],
+      "connectVia": "ESP8266",
+      "connectPort": "/dev/cu.usbmodem14111",
+      "connectBaud": "115200",
+      "connectIP": "192.168.15.15",
+      "jogStepsize": 1,
+      "jogFeedXY": 30,
+      "jogFeedZ": 5,
+      "jogAccumulatedJobTime": 579,
+      "dpiBitmap": 72
     }
   }
 }
