@@ -129,6 +129,11 @@
       "dpiBitmap": 72
     }
   },
+ "*FabCreator": {
+    "machineLabel": "FabKit",
+    "machineDescription": "Use this if you have an FabKit from FabCreator",
+    "machineAbout": "FabCreator.md",
+    "settings": {
 {
   "__version": "0.4.0",
   "__selectedProfile": "FabKit",
