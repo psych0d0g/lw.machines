@@ -44,8 +44,6 @@
     "machineDescription": "Use this if you have anEmblaser 2 machine",
     "machineAbout": "emblaser2.md",
     "settings": {
-      "__version": "0.4.0",
-      "__selectedProfile": "Emblaser2",
       "machineWidth": 500,
       "machineHeight": 300,
       "machineBeamDiameter": 0.2,
@@ -114,12 +112,7 @@
         "USB",
         "ESP8266"
       ],
-      "comPorts": [
-        "/dev/cu.Bluetooth-Incoming-Port",
-        "/dev/cu.usbmodem14111"
-      ],
       "connectVia": "ESP8266",
-      "connectPort": "/dev/cu.usbmodem14111",
       "connectBaud": "115200",
       "connectIP": "192.168.15.15",
       "jogStepsize": 1,
@@ -129,79 +122,87 @@
       "dpiBitmap": 72
     }
   },
- "*FabCreator": {
+  "*FabCreator": {
     "machineLabel": "FabKit",
     "machineDescription": "Use this if you have an FabKit from FabCreator",
     "machineAbout": "FabCreator.md",
     "settings": {
-  "__version": "0.4.0",
-  "__selectedProfile": "FabKit",
-  "machineWidth": 680,
-  "machineHeight": 450,
-  "machineBeamDiameter": 0.1,
-  "machineZEnabled": false,
-  "machineZMatThickness": 0,
-  "machineZToolOffset": 0,
-  "machineBlowerEnabled": false,
-  "machineBlowerGcodeOn": "",
-  "machineBlowerGcodeOff": "",
-  "pxPerInch": 72,
-  "dpiRasterBmp": 300,
-  "toolSafetyLockDisabled": false,
-  "toolCncMode": false,
-  "toolImagePosition": "BL",
-  "toolUseNumpad": true,
-  "toolVideoDevice": null,
-  "toolVideoPerspective": {
-    "enabled": false,
-    "before": [
-      170.66666666666666,
-      384,
-      682.6666666666666,
-      384,
-      682.6666666666666,
-      96,
-      170.66666666666666,
-      96
-    ],
-    "after": [
-      170.66666666666666,
-      384,
-      682.6666666666666,
-      384,
-      682.6666666666666,
-      96,
-      170.66666666666666,
-      96
-    ]
-  },
-  "toolVideoLens": {"a": 1, "b": 1, "F": 1, "scale": 1},
-  "toolVideoFov": {"x": 1, "y": 1},
-  "toolVideoResolution": "720p(HD)",
-  "toolWebcamUrl": "",
-  "toolFeedUnits": "mm/s",
-  "toolTestSValue": 1,
-  "toolTestDuration": 0,
-  "gcodeStart": "G21         ; Set units to mm\nG90         ; Absolute positioning\nM3           ; Laser On\nM106       ; Compressor On",
-  "gcodeEnd": "M5                       ;Laser off\nG28.2XY              ; Home X & Y\nM107                   ;Compressor Off",
-  "gcodeHoming": "G28.2XY     ;Home X & Y",
-  "gcodeToolOn": "",
-  "gcodeToolOff": "",
-  "gcodeSMaxValue": 1,
-  "gcodeToolTestPower": 0,
-  "gcodeToolTestDuration": 0,
-  "comServerIP": "localhost:8000",
-  "comServerConnect": false,
-  "comInterfaces": ["USB", "ESP8266"],
-  "comPorts": ["COM10"],
-  "connectVia": "USB",
-  "connectPort": "COM10",
-  "connectBaud": "115200",
-  "connectIP": "",
-  "jogStepsize": 100,
-  "jogFeedXY": 500,
-  "jogFeedZ": 5,
-  "dpiBitmap": 300
-}
-}
+      "machineWidth": 680,
+      "machineHeight": 450,
+      "machineBeamDiameter": 0.1,
+      "machineZEnabled": false,
+      "machineZMatThickness": 0,
+      "machineZToolOffset": 0,
+      "machineBlowerEnabled": false,
+      "machineBlowerGcodeOn": "",
+      "machineBlowerGcodeOff": "",
+      "pxPerInch": 72,
+      "dpiRasterBmp": 300,
+      "toolSafetyLockDisabled": false,
+      "toolCncMode": false,
+      "toolImagePosition": "BL",
+      "toolUseNumpad": true,
+      "toolVideoDevice": null,
+      "toolVideoPerspective": {
+        "enabled": false,
+        "before": [
+          170.66666666666666,
+          384,
+          682.6666666666666,
+          384,
+          682.6666666666666,
+          96,
+          170.66666666666666,
+          96
+        ],
+        "after": [
+          170.66666666666666,
+          384,
+          682.6666666666666,
+          384,
+          682.6666666666666,
+          96,
+          170.66666666666666,
+          96
+        ]
+      },
+      "toolVideoLens": {
+        "a": 1,
+        "b": 1,
+        "F": 1,
+        "scale": 1
+      },
+      "toolVideoFov": {
+        "x": 1,
+        "y": 1
+      },
+      "toolVideoResolution": "720p(HD)",
+      "toolWebcamUrl": "",
+      "toolFeedUnits": "mm/s",
+      "toolTestSValue": 1,
+      "toolTestDuration": 0,
+      "gcodeStart": "G21         ; Set units to mm\nG90         ; Absolute positioning\nM3           ; Laser On\nM106       ; Compressor On",
+      "gcodeEnd": "M5                       ;Laser off\nG28.2XY              ; Home X & Y\nM107                   ;Compressor Off",
+      "gcodeHoming": "G28.2XY     ;Home X & Y",
+      "gcodeToolOn": "",
+      "gcodeToolOff": "",
+      "gcodeSMaxValue": 1,
+      "gcodeToolTestPower": 0,
+      "gcodeToolTestDuration": 0,
+      "comServerIP": "localhost:8000",
+      "comServerConnect": false,
+      "comInterfaces": [
+        "USB",
+        "ESP8266"
+      ],
+      "connectVia": "USB",
+      "connectPort": "COM10",
+      "connectBaud": "115200",
+      "connectIP": "",
+      "jogStepsize": 100,
+      "jogFeedXY": 500,
+      "jogFeedZ": 5,
+      "dpiBitmap": 300
+    }
+  }
 }
