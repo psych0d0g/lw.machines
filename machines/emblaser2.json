@@ -3,6 +3,8 @@
     "machineLabel": "Emblaser 2",
     "machineDescription": "Use this if you have an Emblaser 2 from Darkly Labs",
     "machineAbout": "emblaser2.md",
+    "helpUrl": "https://darklylabs.zendesk.com/hc/en-us/community/topics/115000181507-Laserweb",
+    "tutorialsUrl": "https://darklylabs.zendesk.com/hc/en-us/categories/202585917-Tutorials",
     "settings": {
       "machineWidth": 500,
       "machineHeight": 300,
