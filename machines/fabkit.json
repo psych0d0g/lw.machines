@@ -11,10 +11,11 @@
             "machineZMatThickness": 0,
             "machineZToolOffset": 0,
             "machineBlowerEnabled": false,
+            "machineAEnabled": false,
             "machineBlowerGcodeOn": "",
             "machineBlowerGcodeOff": "",
             "pxPerInch": 72,
-            "dpiRasterBmp": 300,
+            "dpiBitmap": 300,
             "toolSafetyLockDisabled": false,
             "toolCncMode": false,
             "toolImagePosition": "BL",
@@ -66,20 +67,15 @@
             "gcodeSMaxValue": 1,
             "gcodeToolTestPower": 0,
             "gcodeToolTestDuration": 0,
-            "comServerIP": "localhost:8000",
-            "comServerConnect": false,
-            "comInterfaces": [
-                "USB",
-                "ESP8266"
-            ],
             "connectVia": "USB",
-            "connectPort": "COM10",
             "connectBaud": "115200",
-            "connectIP": "",
             "jogStepsize": 100,
             "jogFeedXY": 500,
             "jogFeedZ": 5,
-            "dpiBitmap": 300
+            "machineBottomLeftX": 0,
+            "machineBottomLeftY": 0,
+            "toolGridWidth": 800,
+            "toolGridHeight": 600
         }
     }
 }
