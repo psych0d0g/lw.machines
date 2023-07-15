@@ -1,5 +1,5 @@
 {
-  "LaserSaur": {
+  "*gen_grbl": {
     "machineLabel": "LaserSaur",
     "machineDescription": "Default settings for our FabLab Lasercutter",
     "settings": {
