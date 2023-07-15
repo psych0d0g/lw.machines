@@ -1,14 +1,12 @@
 {
   "LaserSaur": {
     "machineLabel": "LaserSaur",
+    "machineDescription": "Default settings for our FabLab Lasercutter",
     "settings": {
-      "__version": "4.0.999",
-      "__selectedProfile": "LaserSaur",
-      "__latestRelease": "2019-11-26T10:45:07Z",
       "showMachine": true,
       "machineWidth": 1200,
       "machineHeight": 600,
-      "machineBeamDiameter": 0.2,
+      "machineBeamDiameter": 0.15,
       "machineBottomLeftX": 0,
       "machineBottomLeftY": -600,
       "machineFeedRange": {
@@ -70,7 +68,7 @@
       "gcodeConcurrency": 2,
       "gcodeCurvePrecision": 1.2,
       "comServerVersion": "4.1.000",
-      "comServerIP": "192.168.178.64",
+      "comServerIP": "192.168.178.77",
       "comServerConnect": false,
       "comInterfaces": ["USB", "ESP8266", "Telnet"],
       "comPorts": [
