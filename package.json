@@ -4,7 +4,7 @@
   "description": "LaserWeb Machine profiles...",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LaserWeb/lw.machines.git"
+    "url": "git+https://github.com/psych0d0g/lw.machines.git"
   },
   "keywords": [
     "laser",
@@ -15,7 +15,7 @@
   "author": "Laserweb Dev Team",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/LaserWeb/lw.machines/issues"
+    "url": "https://github.com/psych0d0g/lw.machines/issues"
   },
-  "homepage": "https://github.com/LaserWeb/lw.machines#readme"
+  "homepage": "https://github.com/psych0d0g/lw.machines#readme"
 }
